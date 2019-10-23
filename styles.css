@@ -2,7 +2,9 @@
 
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: 10px;
+  background:#ffffff;
+  color:#000000;
 }
 
 h1 {
