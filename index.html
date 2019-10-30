@@ -20,31 +20,18 @@
     }
   </style>
   <body>
-    <h1>Hi there!</h1>
+    <p id = "paragraph">
+      SUPRISE
+    </p>
+    <p id = "quote">
+      
+    </p>
+    <img src = "https://cdn.glitch.com/95530bae-16f7-47db-b08e-a01bca6a70ad%2Fsensei-jain.png?v=1571917392985" width = "300px" id = "sensei">
     
     <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+      YOUR SCORE:
     </p>
-    <button onclick="console.log('thanks')">
-      Hello World
-    </button>
-    
-    <div class="pictureFrame">
-       <img id="spidey" src="https://cdn.glitch.com/8ed6991a-1247-4cf3-a1ca-395a06f9a74e%2Fspider_man_homecoming.0.jpg?v=1571831228613">
-    </div>
-     <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
-    <button onclick="console.log('thanks')">
-      Hello World
-    </button>
-    
-    <div class="pictureFrame">
-       <img id="spidey" src="https://cdn.glitch.com/8ed6991a-1247-4cf3-a1ca-395a06f9a74e%2Fspider_man_homecoming.0.jpg?v=1571831228613">
-    </div>
-   
+
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
@@ -124,6 +111,35 @@
      <h1 id="changing">Watch Me Change Text</h1>
   <button type="button" onclick="document.getElementById('changing').innerHTML = 'You Have Changed My Text!'">Press the Button!</button>
     
+
+    <p id = "score">
+      0
+    </p>
+    
+    <button onclick = "document.body.style='background-color: red;'"> WHAT DO I DO </button>
+    
+    <button onclick = "document.getElementById('paragraph').style.opacity=100;"> WHAT DO I DO </button>
+    
+    <button onclick = "randomPosition()"> WHAT DO I DO </button>
+    
+    <button onclick = "randomRotate()"> WHAT DO I DO </button>
+    
+    <button onclick = "document.getElementById('quote').innerHTML = 'Why Hello There'"> WHAT DO I DO </button>
+    
+    <button onclick = "document.getElementById('sensei').src = 'https://cdn.glitch.com/95530bae-16f7-47db-b08e-a01bca6a70ad%2FSensei2.jpg?v=1572135125032'"> WHAT DO I DO </button>
+    
+    <button onclick = "loseScore()"> WHAT DO I DO </button>
+    
+    <button onclick = "changeScore()"> WHAT DO I DO </button>
+    
+    <button onclick = "window.open('https://not-pizza.glitch.me/', '_blank')"> WHAT DO I DO </button>
+    
+    <button onclick = "disapearButtons()"> WHAT DO I DO </button>
+    
+    <button onclick = "document.getElementById('score').innerHTML = '100'"> WHAT DO I DO </button>
+    
+    <button onclick = "extremeRandomButtons()"> WHAT DO I DO </button>
+
     
   </body>
 </html>
