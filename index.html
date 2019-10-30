@@ -11,7 +11,14 @@
     
     <!-- import the webpage's javascript file -->
     <script src="https://bradleycodeu.github.io/buttonGame2019/script.js" defer></script>
-  </head>  
+  </head>
+  <style>
+    #thirdButton {
+      width: 300px;
+      height: 300px;
+      background-color: purple;
+    }
+  </style>
   <body>
     <h1>Hi there!</h1>
     
@@ -43,5 +50,80 @@
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
+    
+     <h1 id="demo" style="display:none">Welcome to the Button Changing Game!</h1>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.display='block'"
+    >
+      Click Here!</button
+    ><br />
+
+    <h2>1st Button</h2>
+    <button type="button" onclick="alert('You Have Found the Second Button')">
+      Click the Button</button
+    ><br />
+    <br/>
+    <button onclick="myFunction()">Click the Button</button>
+    <div id="thirdButton">
+      Hello
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("thirdButton").style.display = "none";
+      }
+    </script><br>
+    <button type="button" onclick="changeColor()">
+      Click the Button to Change the Background
+    </button>
+
+    <script>
+      function changeColor() {
+        document.body.style.backgroundColor = "teal";
+      }
+    </script><br>
+    
+    <p>Click the button to display the time.</p>
+
+  <button onclick="getElementById('time').innerHTML=Date()">What is the time?</button>
+
+  <p id="time"></p><br>
+    
+    <h1 id="change">Click the Button to Change my Text Bigger</h1>
+    <button type="button" onclick="document.getElementById('change').style.fontSize='40px'">Click Here!</button><br>
+   
+    Field1: <input type="text" id="field1" value="Hello World!"><br>
+    Field2: <input type="text" id="field2"><br><br>
+
+    <button onclick="field()">Tap on the Button</button><br>
+
+    <script>
+    function field() {
+    document.getElementById("field2").value = document.getElementById("field1").value;
+    }
+    </script>
+    
+
+    <button id = "myButton" onclick = "changeButtonColor()">Click to change color</button>
+    <script>
+    function changeButtonColor() {
+    document.getElementById("myButton").style.backgroundColor = "green";
+    }
+    </script><br>
+    
+    <p id="demo3">Make Me Disappear</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!
+    </button><br>
+    
+     <p id="button" style="display:none">Hey! You brought me back!!</p>
+    <button type="button" onclick="document.getElementById('button').style.display='block'">Try Me!</button><br>
+    
+     <h1 id="changeText">Click the Button to Change my Text Smaller</h1>
+    <button type="button" onclick="document.getElementById('changeText').style.fontSize='20px'">Click Here!</button><br>
+    
+     <h1 id="changing">Watch Me Change Text</h1>
+  <button type="button" onclick="document.getElementById('changing').innerHTML = 'You Have Changed My Text!'">Press the Button!</button>
+    
+    
   </body>
 </html>
