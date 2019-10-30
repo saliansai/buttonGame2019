@@ -1,13 +1,15 @@
 /* Add interactivity to your site with Javascript */
 function randomPosition() {
   var list = document.getElementsByTagName("BUTTON");
-  for(var i = 0; i < 12; i++){
+  for(var i = 0; i < list.length; i++){
+    if(i%2==0){
     var x = Math.floor((Math.random() * 1500) + 1);
-    var y = Math.floor((Math.random() * 900) + 1);
+    var y = Math.floor((Math.random() * 3000) + 1);
     var xpos = x+'px'
     var ypos = y+'px'
     list[i].style.right = xpos;
     list[i].style.top = ypos;
+    }
   }
 }
 
